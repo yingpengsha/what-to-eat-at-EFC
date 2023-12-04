@@ -5,6 +5,7 @@ specifiers:
   '@types/react-dom': ^18.2.15
   '@typescript-eslint/eslint-plugin': ^6.10.0
   '@typescript-eslint/parser': ^6.10.0
+  '@uiw/react-baidu-map': ^2.7.0
   '@vitejs/plugin-react-swc': ^3.5.0
   autoprefixer: ^10.4.16
   eslint: ^8.53.0
@@ -18,6 +19,7 @@ specifiers:
   vite: ^5.0.0
 
 dependencies:
+  '@uiw/react-baidu-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -47,6 +49,13 @@ packages:
     resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
     engines: {node: '>=10'}
     dev: true
+
+  /@babel/runtime/7.23.5:
+    resolution: {integrity: sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
 
   /@esbuild/android-arm/0.19.8:
     resolution: {integrity: sha512-31E2lxlGM1KEfivQl8Yf5aYU/mflz9g06H6S15ITUFQueMFtFjESRMoDSkvMo8thYvLBax+VKTPlpnx+sPicOA==}
@@ -637,6 +646,376 @@ packages:
       '@typescript-eslint/types': 6.13.1
       eslint-visitor-keys: 3.4.3
     dev: true
+
+  /@uiw/react-baidu-map-api-loader/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-RrdRzhoKaPKoJ/Pu4q8/s/kR/amsuabrJWkLg5wB6/AlyWKg/JGTOBZj8immDoTKqE5SNcYR/TRzC1V8C5q9cA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-circle/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-aHzb+YZZMmiyECSh63ppf5gMuRmNhwYaNxTlZ84h9HfPgJjrOR7PnGuVdNkVY61CcmRWMejId/7pRcRjC9o2ww==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-g7ajU4GEEdcSYPuGcXHmoP54yKhh4pDRki+DLK5Gz6LU7J7zAOtGcOQeX5Catf/GROJA+Ce+sk+kiX32FHCV1A==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-copyright-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-0A0JLr4zPyww1LWc2RHL3O8Wts6zc7V70ewRisB62ZD7wVxkKerOKQMCSwSs/AQw7jQeIFW6A9ae8NZSkU41vw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-curve-line/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-tXGaVzYsEaKcfn3Gn1QbgJI1x4v71/lMl4e1lAZ6XtFXgYZc1R3ZnTkfv+LOBPD1WIoTORY3rjCeqCT8qeRnjA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-custom-overlay/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-benIaz/WnO26FYVIOjB+tMUU5hxoZnI/k3hMpIxJlFXIuUs9OC9P8gZmHb2sNXpkV7el3rB/fR+bTQmBOwklow==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-drawing-manager/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-E+7bAPoXb5gEhTePwoXnd3VW8enat5BCHosaza86IzJ24eJ0VpIOosNiNLQim6ae3CbWSEg77dTpx0e/k/XyJQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-geolocation-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-BkJ82gKDs4qOPqKg1n7Ds1tJIDCFXHXI+psGrjQ/n4H+f2eZIoJ7HaLQp9v5iDDYG65wq34xAf+KgmXyeGqWOw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-ground-overlay/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-PyRXBg6q5eqOxUizjvtjjF3NzJV8dr0Xw4e0WT+MUt0SkLXa++7jCMxZZJ75iWca2HjbV3K+MHDuXhJJtayADQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-info-window/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-l2u5HO7Whq87NHyEjBUwd1E6+JNklzrzSDDkgewR5U6ckSq5g8wOiJY0SXhaZI/CwpzAj05XFaFux3aSwriewg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-label/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ZxiEZ+wt0auPurFOBbw3QJ3QnRGF9HEryR1VNt5iDQVveIuey4hndD5etiDW5CQrtnHb8B03SoL/lMDtBehr1g==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-map/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-QNp3JD3n5tG0PF/FF8IkqR4jtf2uGF0NDGNZcDCfxtN8iajy0dXBq7h36MX7YzY+THIYZxYUR7dHPzu9eVPj+w==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-api-loader': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-types': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-marker/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-RtiFNEk1W9rN1jdCmgm1IWgs1y2Qw5FMRkACBWQ4uHs2gH18DmrZ+uW3z0bOnihYyWAzybY/q/gw9oMKpcFThg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-navigation-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-n3yqtgcD+U5wMRCrI+T7JVTuPBKPpgvzN4TNnrsPZyFvX7VXnZSvMx0VZ+YbMki4NYDK9C439k5l5GVFn5GFmg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-overview-map-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-JGaEjYLVSYgAo8PmqD1Ma//96ZJFCfwIzieYH7yr6eHmS3msLKAnTtUW4pvu48ybc5PJ2J/9zJm6MfzVcmdXyg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-panorama-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Omk3JxD4lFMCzdZlMsK27mQf9dzgkwO2nAy5JdH/WUe9xeoJaIDEqybEdk2Dl94ITdQQbSERRCFjvwp5aNVBiw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-point-collection/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-0AaRoOYI/MwKYkv5JWMYQx5z+4V0YO2H2G0JpF8PkX5Mz36dWdIONmJBoalIob+tg3i5PZxnHMaL9bqo70TT6Q==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-polygon/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-JnYqFvFuryMLeWPvthwu1ZFfuK7R6q852OLNR7tlN5bgF9eLAAS7f9HoC8b0RRj+cfjND3Xu2/CEZ2Zp2RoxTw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-polyline/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-0XyxO8w2OxAJwF25huSy5uRawEn2q9PUGfliDrlygI5M62H5yH8CmacgSis8+IDC1ZgcVp9aVRE3FELjZ+5MxA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-require-script/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-4H05VLN046faYT0p9GdjFrqaGXUWvyXXhd2JFI/u7mrYmRrX79pQb/SWxqndX51CjZ6O5N8V5TSaqY5QnhmJfA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-scale-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-T46YJDC54ClLEkPFOV56QY3wv0z1+qG22xnNXxt7eBHc5UNqWFAJihDZmZmewev0vnzExPxoBpwXqlrfjt/6EQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-tile-layer/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-sSCgnNs1ZKdOprY4GvflNJ1miWH5Lx+N9d6i/Sa1rRBp70/Dy/GzPQo/KFsQxCpTvBpyFtIIL1j33HobWMWcnA==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-type-control/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-+OStY/rzSga0iUzb5hBuB5AAg9r664WoGRCVOqz9RUVpNKu8FGNuUpimfd4ZxszMPezC8j7afo3VWLjgKG5Ljw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-types/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-DwmP1+N0WDUBAkh0wi35yNxAlNzgKyNzeEOx+bioMLdTvyi9yWy+78VDKx52cnt4d2BvB1OA9c3jbZTCjZBfoA==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-utils/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Bgmmf7/h6QMJsalEzd4V6Ny5tbapmc48DRSoxpyZkxFRwVeSBxf3RYi5zIO5zN2fkDGDzICdnoix+aZ4QJw3cQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-types': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map-with-map/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-ImGZLo1dKJaBt509aVAyTqKQlA/oWKF9uw/hZCh3k/IHfz0CuQ2IE3nj2/IbZ6yoxo9lWuFJml1xRH0IBsWycQ==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@uiw/react-baidu-map/2.7.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-BI6kqLt4MEIBw9waB4/YdwXjUgpMjhVSLufIxgzqlWujgz/7V+DrPrcqExkA6V5LukqJ124M83xxypCWvaBKsw==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      '@uiw/react-baidu-map-api-loader': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-circle': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-copyright-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-curve-line': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-custom-overlay': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-drawing-manager': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-geolocation-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-ground-overlay': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-info-window': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-label': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-marker': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-navigation-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-overview-map-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-panorama-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-point-collection': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-polygon': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-polyline': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-require-script': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-scale-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-tile-layer': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-type-control': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-types': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-utils': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      '@uiw/react-baidu-map-with-map': 2.7.0_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /@ungap/structured-clone/1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
@@ -1509,6 +1888,11 @@ packages:
     peerDependencies:
       postcss: '>=8.0.9'
       ts-node: '>=9.0.0'
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+      ts-node:
+        optional: true
     dependencies:
       lilconfig: 3.0.0
       postcss: 8.4.32
@@ -1589,6 +1973,10 @@ packages:
     dependencies:
       picomatch: 2.3.1
     dev: true
+
+  /regenerator-runtime/0.14.0:
+    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
+    dev: false
 
   /resolve-from/4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
